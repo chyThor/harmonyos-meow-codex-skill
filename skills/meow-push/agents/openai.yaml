@@ -1,0 +1,4 @@
+interface:
+  display_name: "MeoW 节点通知"
+  short_description: "按用户授权发送任务节点摘要，私有配置不进入技能或发布包"
+  default_prompt: "使用 $meow-push 在指定任务节点发送简短进度通知。"

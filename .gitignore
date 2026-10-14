@@ -1,0 +1,16 @@
+# Private account configuration and runtime data must stay outside this repository.
+.env
+.env.*
+*config.json
+*.dpapi
+*.log
+*.jsonl
+*.stderr
+.state/
+events-*.json
+events.lock
+private-test-results/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
