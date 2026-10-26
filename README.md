@@ -6,6 +6,12 @@ MeoW push notifications for HarmonyOS users — a local Codex agent skill for ta
 
 每位使用者配置自己的 MeoW 接收信息。本项目不提供共享账号，也不附带作者的账号、推送地址或个人配置。
 
+## v1.1.0：可选的模型容量提醒
+
+新增 [Windows 模型容量提醒组件](integrations/windows-capacity-watch/README.md)：真实主任务遇到明确的模型容量错误时，发送简短提醒；同一轮去重，同一任务设 5 分钟冷却，并过滤子智能体、标题和建议请求。
+
+**这项高级组件需要已有兼容的 Windows MeoW/Codex 自动通知部署。仅安装下面的基础 Skill 不满足这个前提。** 请先阅读组件说明中的依赖和安装条件，再决定是否启用。基础 Skill 的安装与按需通知方式保持不变。
+
 ## 谁可以用
 
 - **接收端**：安装了 MeoW 的鸿蒙设备，并已开启通知权限。
@@ -98,5 +104,9 @@ Skill 会按你的要求主动发送。它本身不会安装“每个任务都�
 ## 项目信息
 
 源码、问题反馈和版本下载均通过 [GitHub 仓库](https://github.com/chyThor/harmonyos-meow-codex-skill) 提供。
+
+- 基础 Skill：`skills/meow-push`。
+- 可选容量提醒：`integrations/windows-capacity-watch`。
+- [版本变化](CHANGELOG.md)。
 
 安装目录和分发边界参考 [OpenAI 官方 Skill 文档](https://learn.chatgpt.com/docs/build-skills)。

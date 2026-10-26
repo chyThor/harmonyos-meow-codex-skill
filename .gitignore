@@ -14,3 +14,16 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Local notification deployment, log databases and verification artifacts.
+capacity-watch.settings.json
+codex.notification.settings.json
+codex.notify.config.json
+live-source-check.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*-tests-result.txt
+backups/
+*-backups/
